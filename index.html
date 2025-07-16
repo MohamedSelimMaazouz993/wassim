@@ -1,253 +1,265 @@
 <!DOCTYPE html>
-<!--
-	Cosmix by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Cabinet Wassim Majdi</title>
-<!--Bootstrap-->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<!--Stylesheets-->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!--Responsive-->
-<link rel="stylesheet" type="text/css" href="css/responsive.css">
-<!--Animation-->
-<link rel="stylesheet" type="text/css" href="css/animate.css">
-<!--Prettyphoto-->
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-<!--Font-Awesome-->
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-<!--Owl-Slider-->
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
-<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
-<!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-  [endif]-->
-</head>
-<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
-<!--Preloader-->
-<div id="preloader">
-  <div id="pre-status">
-    <div class="preload-placeholder"></div>
-  </div>
-</div>
-<!--Navigation-->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabinet Maître Wassim Majdi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="./public/style.css" rel="stylesheet" />
+  </head>
+  <body>
 <header id="menu">
-  <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="#menu">
-     <div class="custom-logo">
-      Cabinet Wassim Majdi</h2> 
-     </div>
-</a> </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a class="scroll" href="#menu">Accueil</a></li>
-            <li><a class="scroll" href="#about">A Propos De Nous</a></li>
-            <li><a class="scroll" href="#contact">Contactez - Nous</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Cabinet Wassim Majdi</a>
+    
+    <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#menu">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">A Propos De Nous</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contactez-Nous</a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 </header>
-<!--Slider-Start-->
+    <!-- Carousel -->
+<!-- Carousel Section -->
 <section id="slider">
-  <div id="home-carousel" class="carousel slide" data-ride="carousel">
+  <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2"></button>
+    </div>
     <div class="carousel-inner">
-      <div class="item active" style="background-image:url(images/Slider/perfection.jpg)">
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url('./public/images/679567540.jpeg');">
         <div class="carousel-caption container">
           <div class="row">
             <div class="col-md-7 col-sm-12 col-xs-12">
-                    <h1> Cabinet Maître Wassim Majdi  </h1>
-              <p>CABINET MAJDI est un cabinet d’avocat fondé en 2009, par Maitre WASSIM
+            <div class="container">
+              <h1 class="animated fadeInDown">Cabinet Maître Wassim Majdi</h1>
+              <p class="animated fadeInUp">CABINET MAJDI est un cabinet d’avocat fondé en 2009, par Maitre WASSIM
         MAJDI, avocat à la cour de cassation inscrit au barreau de Tunis,
         spécialiste en droit des affaires, ayant acquis une bonne expérience
         pratique : riche au sein d’un Cabinet International Parisien et étendue
         grâce à ses étroites collaborations avec des cabinets d’avocat au Maroc
         et en Afrique centrale.</p>
-        
             </div>
           </div>
         </div>
       </div>
-      <div class="item" style="background-image:url(images/Slider/perfection.jpg)">
+      </div>
+      
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('./public/images/679567540.jpeg');">
         <div class="carousel-caption container">
           <div class="row">
             <div class="col-md-7 col-sm-12 col-xs-12">
-              <h1>Cabinet Maître Wassim Majdi </h1>
-              <p>CABINET MAJDI a tissé un réseau riche et efficace privilégiant un rapport de proximité avec les clients et ce par soucis d’efficacité pour défendre leurs intérêts. Nous conseillons aussi bien les Tunisiens résidents en Tunisie, que les tunisiens non-résidents en Tunisie mais aussi les clients de nationalités étrangères que les membres du cabinet ont eu l’occasion d’accompagner dans leurs affaires.</p>
+              <h1 class="animated fadeInDown">Cabinet Maître Wassim Majdi</h1>
+              <p class="animated fadeInUp">CABINET MAJDI a tissé un réseau riche et efficace privilégiant un rapport de proximité avec les clients et ce par soucis d’efficacité pour défendre leurs intérêts. Nous conseillons aussi bien les Tunisiens résidents en Tunisie, que les tunisiens non-résidents en Tunisie mais aussi les clients de nationalités étrangères que les membres du cabinet ont eu l’occasion d’accompagner dans leurs affaires.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="item" style="background-image:url(images/Slider/perfection.jpg)">
+      
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('./public/images/679567540.jpeg');">
         <div class="carousel-caption container">
           <div class="row">
-             <div class="col-md-7 col-sm-12 col-xs-12">
-              <h1>Cabinet Wassim Majdi</h1>
-              <p>CABINET MAJDI se spécialise dans l’accompagnement de ses clients dans leurs projets d’investissement dans le domaine immobilier. Mais aussi en leurs fournissant conseils et assistances en matière de contentieux dans le domaine du droit des affaires : affaires civiles, affaires pénales et celles relatives à la liquidation des dossiers de successions.
-</p>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+              <h1 class="animated fadeInDown">Cabinet Wassim Majdi</h1>
+              <p class="animated fadeInUp">CABINET MAJDI se spécialise dans l’accompagnement de ses clients dans leurs projets d’investissement dans le domaine immobilier. Mais aussi en leurs fournissant conseils et assistances en matière de contentieux dans le domaine du droit des affaires : affaires civiles, affaires pénales et celles relatives à la liquidation des dossiers de successions.</p>
             </div>
           </div>
         </div>
       </div>
-      <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a> <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a> </div>
-  </div>
-  <!--/#home-carousel-->
-</section>
-<!--About-Section-Start-->
-<section id="about">
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="heading">
-        <h2>A Propos De <span>Nous</span></h2>
-        <div class="line"></div>
-        <p>CABINET MAJDI est un cabinet d’avocat fondé en 2009, par Maitre WASSIM MAJDI, avocat à la cour de cassation inscrit au barreau de Tunis, spécialiste en droit des affaires, ayant acquis une bonne expérience pratique : riche au sein d’un Cabinet International Parisien et étendue grâce à ses étroites collaborations avec des cabinets d’avocat au Maroc et en Afrique centrale.</p>
-      </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 ab-sec">
-        <div class="col-md-6">
-          <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms"><span>Cabinet </span> Wassim Majdi </h3>
-        CABINET MAJDI est un cabinet d’avocat fondé en 2009, par Maitre WASSIM MAJDI, avocat à la cour de cassation inscrit au barreau de Tunis, spécialiste en droit des affaires, ayant acquis une bonne expérience pratique :
-        riche au sein d’un Cabinet International Parisien et étendue grâce à ses étroites collaborations avec des cabinets d’avocat au Maroc et en Afrique centrale.
-        <br>
-      Au fil du temps le cabinet a tissé un réseau riche et efficace privilégiant un rapport de proximité avec les clients et ce par soucis d’efficacité pour défendre leurs intérêts. Nous conseillons aussi bien les Tunisiens résidents en Tunisie, que les tunisiens non-résidents en Tunisie mais aussi les clients de nationalités étrangères que les membres du cabinet ont eu l’occasion d’accompagner dans leurs affaires.
-<br>
- Le Cabinet se spécialise dans l’accompagnement de ses clients dans leurs projets d’investissement dans le domaine immobilier. Mais aussi en leurs fournissant conseils et assistances en matière de contentieux dans le domaine du droit des affaires : affaires civiles, affaires pénales et celles relatives à la liquidation des dossiers de successions.   
-        </p>
+    <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+    <section id="about">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>A PROPOS DE <span>NOUS</span></h2>
+            <p>
+              CABINET MAJDI est un cabinet d'avocat fondé en 2009, par Maitre
+              WASSIM MAJDI, avocat à la cour de cassation inscrit au barreau de
+              Tunis, spécialiste en droit des affaires, ayant acquis une bonne
+              expérience pratique : riche au sein d'un Cabinet International
+              Parisien et étendue grâce à ses étroites collaborations avec des
+              cabinets d'avocat au Maroc et en Afrique centrale.
+            </p>
+          </div>
         </div>
-        <div class="col-md-6 ab-sec-img wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms"><img src="images/Aboutus/01.jpg" alt=""> </div>
+        <div class="row">
+          <div class="col-md-12 ab-sec">
+            <div class="col-md-6">
+              <h3 class="wow fadeInDown"><span>Cabinet </span> Wassim Majdi</h3>
+              <p>
+                CABINET MAJDI est un cabinet d'avocat fondé en 2009, par Maitre
+                WASSIM MAJDI, avocat à la cour de cassation inscrit au barreau
+                de Tunis, spécialiste en droit des affaires, ayant acquis une
+                bonne expérience pratique : riche au sein d'un Cabinet
+                International Parisien et étendue grâce à ses étroites
+                collaborations avec des cabinets d'avocat au Maroc et en Afrique
+                centrale.
+              </p>
+              <p>
+                Au fil du temps le cabinet a tissé un réseau riche et efficace
+                privilégiant un rapport de proximité avec les clients et ce par
+                soucis d'efficacité pour défendre leurs intérêts. Nous
+                conseillons aussi bien les Tunisiens résidents en Tunisie, que
+                les tunisiens non-résidents en Tunisie mais aussi les clients de
+                nationalités étrangères que les membres du cabinet ont eu
+                l'occasion d'accompagner dans leurs affaires.
+              </p>
+              <p>
+                Le Cabinet se spécialise dans l'accompagnement de ses clients
+                dans leurs projets d'investissement dans le domaine immobilier.
+                Mais aussi en leurs fournissant conseils et assistances en
+                matière de contentieux dans le domaine du droit des affaires :
+                affaires civiles, affaires pénales et celles relatives à la
+                liquidation des dossiers de successions.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="./public/images/logo.png"
+                alt="About Us"
+                class="img-responsive"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!--Fun-Facts-Section-Start-->
 <section id="fun-facts">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-md-12">
-        <div class="fun-fact text-center ">
-          <h3><i class="fa fa-thumbs-o-up "></i> <span class="timer">9650</span></h3>
-          <h6>Clients Satisfés</h6>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="fun-fact text-center">
+          <div class="fact-icon mb-3">
+            <i class="fas fa-thumbs-up"></i>
+          </div>
+          <h3><span class="counter" data-target="9650">0</span></h3>
+          <h6>Clients Satisfaits</h6>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-<!--Contact-Section-Start-->
+
+<!-- Contact Section -->
 <section id="contact">
   <div class="container">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="heading">
-        <h2>Contactez <span> - Nous</span></h2>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading text-center">
+          <h2>Contactez <span>- Nous</span></h2>
+        </div>
       </div>
     </div>
-    <br>
-    <div class="text-center">
-      <div class="col-md-6 col-sm-6 contact-sec-1">
-        <br>
-        <ul class="contact-form">
-          <li><i class="fa fa-map-marker"></i>
-            <h6><strong>Addresse: </strong> 16 Rue de Syrie, Bloc C , 8 éme Etage, Tunis 1002 </h6>
+    <div class="row contact-content">
+      <!-- Left Side - Contact Info -->
+      <div class="col-lg-6 col-md-6 contact-info">
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h5>Adresse : 16 Rue de Syrie, Bloc C, 8ème Etage, Tunis 1002</h5>
+            </div>
           </li>
-          <li><i class="fa fa-envelope"></i>
-            <h6><strong>Email: </strong> <a href="#">cabinet.avocat.majdi@gmail.com</a></h6>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h5>Email : <a href="mailto:cabinet.avocat.majdi@gmail.com" style="text-decoration: none; color: inherit;">cabinet.avocat.majdi@gmail.com</a></h5>
+            </div>
           </li>
-          <li><i class="fa fa-phone"></i>
-            <h6><strong>Telephone:</strong> +216 31 517 384 / +216 22 217 453 </h6>
+          <li>
+            <i class="fas fa-phone"></i>
+            <div>
+              <h5>Téléphone : +216 31 517 384 / +216 22 217 453</h5>
+            </div>
           </li>
-          <li><i class="fa fa-map-marker"></i>
-            <h6><strong>
-                  <a href='https://maps.app.goo.gl/oL9nrLt7o6N2LqcVA'>
-                     Cabinet Wassim Majdi
-                  </a>
-                </strong> </h6>
+          <li>
+            <i class="fas fa-map-marked-alt"></i>
+            <div>
+              <h5> <a href="https://maps.app.goo.gl/oL9nrLt7o6N2LqcVA" target="_blank" style="text-decoration: none; color: inherit;">Cabinet Wassim Majdi</a></h5>
+            </div>
           </li>
-          
         </ul>
       </div>
-      <div class="col-md-6 col-sm-6">
-        <form id="main-contact-form" name="contact-form" method="post" action="#">
-          <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" placeholder="Tapez Votre Nom" required="required">
-              </div>
+      
+      <!-- Right Side - Contact Form -->
+      <div class="col-lg-6 col-md-6 contact-form-wrapper">
+        <form id="main-contact-form" class="contact-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" placeholder="Votre Nom" required>
             </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <input type="email" name="email" class="form-control" placeholder="Tapez Votre Email" required="required">
-              </div>
+            <div class="col-md-6 form-group">
+              <input type="email" name="email" class="form-control" placeholder="Votre Email" required>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" name="subject" class="form-control" placeholder="Sujet" required="required">
+            <input type="text" name="subject" class="form-control" placeholder="Sujet" required>
           </div>
           <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Tapez Votre Message" required="required"></textarea>
+            <textarea name="message" class="form-control" rows="5" placeholder="Votre Message" required></textarea>
           </div>
-          <a class="btn-send col-md-12 col-sm-12 col-xs-12" href="#">Envoyer</a>
+          <button type="submit" class="btn-send">Envoyer</button>
         </form>
       </div>
     </div>
   </div>
 </section>
 
-<footer id="footer-down">
-  <!-- <h2>Follow Us On</h2>
-  <ul class="social-icon">
-    <li class="facebook hvr-pulse"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-    <li class="twitter hvr-pulse"><a href="#"><i class="fa fa-twitter"></i></a></li>
-    <li class="linkedin hvr-pulse"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-    <li class="google-plus hvr-pulse"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-    <li class="youtube hvr-pulse"><a href="#"><i class="fa fa-youtube"></i></a></li>
-    <li class="instagram hvr-pulse"><a href="#"><i class="fa fa-instagram"></i></a></li>
-    <li class="behance hvr-pulse"><a href="#"><i class="fa fa-behance"></i></a></li>
-  </ul> -->
-  <p> &copy; Cabinet Wassim Majdi - 2024  - Powered By templates-stock.com </p>
-</footer>
-<!--Jquery-->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<!--Boostrap-Jquery-->
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<!--Preetyphoto-Jquery-->
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-<!--NiceScroll-Jquery-->
-<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
-<script type="text/javascript" src="js/waypoints.min.js"></script>
-<!--Isotopes-->
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<!--Wow-Jquery-->
-<script type="text/javascript" src="js/wow.js"></script>
-<!--Count-Jquey-->
-<script type="text/javascript" src="js/jquery.countTo.js"></script>
-<script type="text/javascript" src="js/jquery.inview.min.js"></script>
-<!--Owl-Crousels-Jqury-->
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<!--Main-Scripts-->
-<script type="text/javascript" src="js/script.js"></script>
-</body>
+<br>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2025 Cabinet Maître Wassim Majdi. Tous droits réservés.</p>
+          </div>
+        </div>
+      </div>  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/main.js"></script>
+  </body>
 </html>
-
-
