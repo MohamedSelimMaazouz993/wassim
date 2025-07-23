@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize carousel with autoplay and animations
   const carousel = document.querySelector('#home-carousel');
   if (carousel) {
-    const carouselInstance = new bootstrap.Carousel(carousel, {
-      interval: 3000,
+     new bootstrap.Carousel(carousel, {
+      interval: 5000, 
       wrap: true,
     });
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         );
         nextItems[0].classList.add('animated', 'fadeInDown');
         nextItems[1].classList.add('animated', 'fadeInUp');
-      }, 1000);
+      }, 300); // Reduced delay for animations
     });
 
     // Initialize first slide animations
@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
       .querySelector('.carousel-item.active p')
       .classList.add('animated', 'fadeInUp');
   }
-
   // Smooth scrolling for all navigation links
   document.querySelectorAll('a.scroll').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {

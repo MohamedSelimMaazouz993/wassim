@@ -644,7 +644,7 @@ textarea.form-control {
 }
 
 .fadeInDown {
-    animation: fadeInDown 1s ease-in-out;
+    animation: fadeInDown 3s ease-in-out;
 }
 
 @keyframes fadeInDown {
@@ -669,7 +669,7 @@ html {
 }
 
 .animated {
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: both;
 }
 
