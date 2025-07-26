@@ -302,3 +302,111 @@ document.addEventListener('DOMContentLoaded', function() {
   // Adjust on resize
   window.addEventListener('resize', adjustCarouselHeight);
 });
+
+
+
+
+
+// PWA Installation Prompt
+let deferredPrompt;
+let installButton = null;
+let installModal = null;
+let dontInstallButton = null;
+let installLaterButton = null;
+
+// Create the install modal HTML dynamically
+function createInstallModal() {
+  const modalHTML = `
+    <div class="modal fade" id="installModal" tabindex="-1" aria-labelledby="installModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="installModalLabel">Installer l'application</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Installez l'application Cabinet Wassim Majdi sur votre appareil pour un accès plus rapide et une meilleure expérience.</p>
+            <div class="text-center mb-3">
+              <img src="./public/images/wassim_logo-.png" alt="App Icon" style="width: 80px; height: 80px;">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="dontInstallBtn">Ne pas installer</button>
+            <button type="button" class="btn btn-primary" id="installBtn">Installer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  const modalContainer = document.createElement('div');
+  modalContainer.innerHTML = modalHTML;
+  document.body.appendChild(modalContainer);
+  
+  // Initialize modal elements
+  installModal = new bootstrap.Modal(document.getElementById('installModal'));
+  installButton = document.getElementById('installBtn');
+  dontInstallButton = document.getElementById('dontInstallBtn');
+  
+  // Event listeners
+  installButton.addEventListener('click', () => {
+    deferredPrompt.prompt();
+    installModal.hide();
+  });
+  
+  dontInstallButton.addEventListener('click', () => {
+    localStorage.setItem('dontShowInstallPrompt', 'true');
+    installModal.hide();
+  });
+}
+
+// Check if PWA is already installed
+function isAppInstalled() {
+  return window.matchMedia('(display-mode: standalone)').matches || 
+         window.navigator.standalone ||
+         document.referrer.includes('android-app://');
+}
+
+// Show the install prompt
+function showInstallPrompt() {
+  if (!isAppInstalled() && !localStorage.getItem('dontShowInstallPrompt')) {
+    createInstallModal();
+    installModal.show();
+    
+    // Hide the modal after 3 seconds if user doesn't interact
+    setTimeout(() => {
+      if (installModal && installModal._isShown) {
+        installModal.hide();
+      }
+    }, 5000);
+  }
+}
+
+// Register service worker and handle installation prompt
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('ServiceWorker registration successful');
+      })
+      .catch(err => {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+  });
+}
+
+// Listen for beforeinstallprompt event
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later
+  deferredPrompt = e;
+  // Show our install UI
+  showInstallPrompt();
+});
+
+// Track successful installation
+window.addEventListener('appinstalled', () => {
+  console.log('PWA was installed');
+  localStorage.setItem('dontShowInstallPrompt', 'true');
+});

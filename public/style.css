@@ -623,12 +623,21 @@ textarea.form-control {
         font-size: 15px;
     }
 
-  .carousel-caption p {
-    font-size: 15px;
-    margin-right: 100px;
-    max-width: 100%;
+    .carousel-caption p {
+            font-size: 13px;
+            margin-right: 100px;
+            max-width: 85%;
+        }
 
-  }
+
+  .contact-list h5 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
 
   .container {
     padding: 0 10px;
